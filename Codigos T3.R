@@ -67,14 +67,3 @@ spplot(pred["KPI.pred"])
 spplot(pred["KPI.var"])
 
 pred
-
-library(conf)
-pred["KPI.pred"]
-
-pred["KPI.pred"]
-
-region <- conf2d_int(saithe$Bio, saithe$HR, KPI, level=0.95, n=200)
-polygon(region, lwd=2)
-
-
-crplot(dataset = pred["KPI.pred"], distn = "normal", alpha = 0.05)
